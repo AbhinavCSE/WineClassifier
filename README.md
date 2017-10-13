@@ -26,7 +26,37 @@ You need to have the following in python3
  * Sklearn
  * Pandas
  
-## Testing
+## Classifying
+### Importing
 ```
 import numpy as np
+from sklearn import preprocessing, model_selection, neighbors, svm,ensemble
+import pandas as pd
+```
+### Loading the dataset
+```
+df = pd.read_csv('wine.data.txt')
+```
+
+### Deciding the features and labels (X and y)
+```
+X = np.array(df.drop(['id'],1))
+y = np.array(df['id'])
+```
+
+### Splitting the dataset into Training and Testing
+```
+X_train, X_test,y_train,y_test = model_selection.train_test_split(X,y,test_size=0.2,random_state=0)
+```
+
+### Training with RandomForestClassifier
+```
+clf = ensemble.RandomForestClassifier(n_estimators=100)
+clf.fit(X_train,y_train)
+```
+
+### Calculating the accuracy using Test data
+```
+accuracy = clf.score(X_test,y_test)
+print(accuracy)
 ```
