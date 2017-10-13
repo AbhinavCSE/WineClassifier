@@ -55,6 +55,9 @@ clf = ensemble.RandomForestClassifier(n_estimators=100)
 clf.fit(X_train,y_train)
 ```
 
+Based on the classifier, we will obtain different accuracy scores, for example:
+* RandomForestClassifier gives 96-99% accuraccy
+
 ### Calculating the accuracy using Test data
 ```
 accuracy = clf.score(X_test,y_test)
