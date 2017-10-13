@@ -1,7 +1,7 @@
 # WineClassifier
 Classifying Wine based on the given attribute values
 
-##The Data
+## The Data
 We have been given a dataset about wines with the following attributes(14 including the ID)
 * ID
 * Alcohol
@@ -20,7 +20,7 @@ We have been given a dataset about wines with the following attributes(14 includ
 
 The dataset can be downloaded from [UCI ML Repository Wine Data Set](https://archive.ics.uci.edu/ml/datasets/wine)
 
-##Prerequisites
+## Prerequisites
 You need to have the following in python3
  * Numpy
  * Sklearn
