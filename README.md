@@ -25,3 +25,8 @@ You need to have the following in python3
  * Numpy
  * Sklearn
  * Pandas
+ 
+## Testing
+'''
+import numpy as np
+'''
